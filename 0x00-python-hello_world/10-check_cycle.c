@@ -15,12 +15,27 @@ int check_cycle(listint_t *list)
 		return (0);
 	}
 
-	while (s != NULL && f != NULL && f->next != NULL)
+	while (s != NULL && s->next != NULL)
 	{
-		s = s->next;
-		f = f->next->next;
-		if (s == f);
+		list = list->next;
+		s = s->next->next;
+		if (list == s)
 		{
+			list = f;
+			f = s;
+			while (1)
+			{
+				s = f;
+				while (s->next != list && s->next != f)
+				{
+					s = s->next;
+				}
+				if (s->next == list)
+				{
+					break;
+				}
+				list = list->next;
+			}
 			return (1);
 		}
 	}
