@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 def simple_delete(a_dictionary, key=""):
-    if len(key) < 1:
+    if not key or not a_dictionary:
         return a_dictionary
 
-    del a_dictionary[key] if a_dictionary[key] is not None
+    if a_dictionary[key] is not None
+        del a_dictionary[key]
 
     return a_dictionary
