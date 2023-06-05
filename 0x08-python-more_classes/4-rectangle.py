@@ -55,3 +55,4 @@ class Rectangle:
         fig = "Rectangle(" + str(self.__width)
         fig += ", " + str(self.__height) + ")"
         return (fig)
+
