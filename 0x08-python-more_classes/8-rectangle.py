@@ -51,11 +51,11 @@ class Rectangle:
     def bigger_or_equal(fig_1, fig_2):
         if not isinstance(fig_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
-        if not isinstance(rect_2, Rectangle):
-            raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_1.area() >= rect_2.area():
-            return rect_1
-        return rect_2
+        if not isinstance(fig_2, Rectangle):
+            raise TypeError("fig_2 must be an instance of Rectangle")
+        if fig_1.area() >= fig_2.area():
+            return fig_1
+        return fig_2
 
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
