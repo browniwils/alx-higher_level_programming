@@ -45,14 +45,14 @@ class Rectangle:
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
             return (0)
-        return (self.__width * 2) + (self.__height * 2)
+        return self.__width * 2) + (self.__height * 2
 
     @staticmethod
     def bigger_or_equal(fig_1, fig_2):
         if not isinstance(fig_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(fig_2, Rectangle):
-            raise TypeError("fig_2 must be an instance of Rectangle")
+            raise TypeError("rect_2 must be an instance of Rectangle")
         if fig_1.area() >= fig_2.area():
             return fig_1
         return fig_2
