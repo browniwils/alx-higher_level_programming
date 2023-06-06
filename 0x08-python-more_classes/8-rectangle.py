@@ -44,8 +44,8 @@ class Rectangle:
 
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
-            return (0)
-        return self.__width * 2) + (self.__height * 2
+            return 0
+        return (self.__width * 2) + (self.__height * 2)
 
     @staticmethod
     def bigger_or_equal(fig_1, fig_2):
@@ -66,12 +66,12 @@ class Rectangle:
             [fig.append(str(self.print_symbol)) for j in range(self.__width)]
             if i != self.__height - 1:
                 fig.append("\n")
-        return ("".join(fig))
+        return "".join(fig)
 
     def __repr__(self):
         fig = "Rectangle(" + str(self.__width)
         fig += ", " + str(self.__height) + ")"
-        return (fig)
+        return fig
 
     def __del__(self):
         type(self).number_of_instances -= 1
