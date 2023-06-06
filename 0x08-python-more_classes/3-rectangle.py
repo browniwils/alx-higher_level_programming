@@ -1,11 +1,18 @@
 #!/usr/bin/python3
+"""
+Defines a Rectangle class
+"""
+
 
 class Rectangle:
-    """
-    Rectangle class
-    """
-
+    """ A class for a rectangle """
     def __init__(self, width=0, height=0):
+        """Initialize a new Rectangle.
+
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
         self.width = width
         self.height = height
 
@@ -34,6 +41,7 @@ class Rectangle:
         self.__height = value
 
     def area(self):
+        """Return the area of the Rectangle."""
         return (self.__width * self.__height)
 
     def perimeter(self):
@@ -51,4 +59,3 @@ class Rectangle:
             if i != self.__height - 1:
                 fig.append("\n")
         return ("".join(fig))
-
