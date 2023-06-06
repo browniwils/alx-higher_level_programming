@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+"""
+Defines a Rectangle class
+"""
+
 
 class Rectangle:
-    """
-    Rectangle class
-    """
+    """ A class for a rectangle """
+
     number_of_instances = 0
     def __init__(self, width=0, height=0):
         type(self).number_of_instances += 1
@@ -61,4 +64,3 @@ class Rectangle:
     def __del__(self):
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-

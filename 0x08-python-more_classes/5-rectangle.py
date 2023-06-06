@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+"""
+Defines a Rectangle class
+"""
+
 
 class Rectangle:
-    """
-    Rectangle class
-    """
+    """ A class for a rectangle """
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -58,4 +60,3 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-
