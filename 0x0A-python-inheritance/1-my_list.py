@@ -4,10 +4,8 @@
 
 
 class MyList(list):
-    """Example subclass of list"""
-    def __init__(self):
-        super().__init__()
-
+    """My list class inheritting list"""
+    
     def print_sorted(self):
         """Prints sorted list nicely"""
         print(sorted(self))
