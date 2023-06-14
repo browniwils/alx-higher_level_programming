@@ -72,7 +72,8 @@ class SinglyLinkedList:
             temp.next_node = new
 
     def __str__(self):
-        """Method define the print() representation of a SinglyLinkedList object"""
+        """Method define the print() representation of a 
+        SinglyLinkedList object"""
         values = []
         temp = self.__head
         while temp is not None:
