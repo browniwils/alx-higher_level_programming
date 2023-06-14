@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
 """Module defines MagicClass matching exactly a bytecode provided by Holberton."""
-import math
 
+
+import math
 
 class MagicClass:
     """Class represent a circle object

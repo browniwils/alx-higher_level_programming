@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""Define classes for a singly-linked list."""
+"""Module define classes for a singly-linked list objects
+"""
 
 
 class Node:
@@ -77,4 +78,4 @@ class SinglyLinkedList:
         while temp is not None:
             values.append(str(temp.data))
             temp = temp.next_node
-        return '\n'.join(values)
+        return ('\n'.join(values))
