@@ -14,9 +14,7 @@ if __name__ == "__main__":
     database = args[3]
     port = 3306
 
-    db = MySQLdb.connect(host=host,
-                         port=port, passwd=passcode,
-                         db=database, user=user)
+    db = MySQLdb.connect(host=host, port=port, passwd=passcode, db=database, user=user)
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states")
     row_data = cursor.fetchall()

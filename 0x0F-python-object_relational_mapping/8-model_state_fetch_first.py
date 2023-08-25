@@ -23,6 +23,6 @@ if __name__ == "__main__":
     session = Session()
     data = session.query(State).first()
     if data is None:
-            print("Nothing")
+        print("Nothing")
     else:
         print(data.id, data.name, sep=": ")
