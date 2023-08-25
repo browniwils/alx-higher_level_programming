@@ -18,8 +18,7 @@ if __name__ == "__main__":
                          port=port, passwd=passcode,
                          db=database, user=user)
     cursor = db.cursor()
-    cursor.execute("""SELECT * FROM states WHERE name
-                   LIKE BINARY 'N%' ORDER BBY state.id""")
+    cursor.execute("""SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BBY state.id""")
     row_data = cursor.fetchall()
     for data in row_data:
         print(data)
