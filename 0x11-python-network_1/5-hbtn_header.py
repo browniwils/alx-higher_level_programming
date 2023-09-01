@@ -3,7 +3,7 @@
 Send http and print the
 X-Request-Id value of the header
 """
-from sys import sys
+import sys
 from requests import get
 
 
