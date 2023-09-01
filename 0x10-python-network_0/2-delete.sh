@@ -1,4 +1,3 @@
 #!/bin/bash
 # Script sends an http request and print the response
-
-curl -s -X DELETE "$1";
+curl -sX DELETE "$1" -L

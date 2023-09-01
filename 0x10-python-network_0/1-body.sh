@@ -1,4 +1,3 @@
 #!/bin/bash
 # Script sends http request and display the body of the response
-
-curl -sL --fail -X GET "$1";
+curl -sX GET "$1" -L
