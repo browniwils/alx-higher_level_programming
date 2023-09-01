@@ -14,7 +14,8 @@ def http_request(url):
     """
     if url:
         try:
-            return get(url).headers.get('X-Request-Id')
+            response = get(url)
+            return response.headers.get("X-Request-Id")
         except Exception as e:
             return e
 
