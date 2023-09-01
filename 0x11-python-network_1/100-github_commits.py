@@ -12,6 +12,7 @@ def http_request(url):
     resposne = requests.get(url)
     return resposne.json()
 
+
 if __name__ == "__main__":
     resource = "https://api.github.com/repos/{}/{}/commits".format(sys.argv[2], sys.argv[1])
     git_commits = http_request(resource)
