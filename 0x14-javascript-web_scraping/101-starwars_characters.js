@@ -7,7 +7,7 @@ const url = base.concat(id);
 
 request(url, function (error, res, body) {
   if (!error) {
-    const { characters } = JSON.parse(body).results[0];
+    const { characters } = JSON.parse(body);
     characters.forEach((character) => {
       request(character, function (error, res, body) {
         if (!error) {
